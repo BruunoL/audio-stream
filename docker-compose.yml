@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  nodejs:
+    image: audio-stream
+    container_name: audio-stream
+    env_file: .env
+    environment:
+    ports:
+      - "80:8080"
+    volumes:
